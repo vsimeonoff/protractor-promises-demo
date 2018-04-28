@@ -1,4 +1,4 @@
-import { LivescorePage } from './app.po';
+import { LivescorePage } from './livescore.po';
 
 describe('Livescore:', () => {
   let page: LivescorePage;
