@@ -1,6 +1,6 @@
 import { LivescorePage } from './app.po';
 
-describe('Promise livescore:', () => {
+describe('Livescore:', () => {
   let page: LivescorePage;
 
   // Change to today's events on main livescore page
@@ -20,7 +20,7 @@ describe('Promise livescore:', () => {
     page = new LivescorePage();
   });
 
-  it('Should find matches', () => {
+  it('Should find events', () => {
     page.navigateTo();
     page.findEvents(todaysEvents).then((events) => {
       page.foundEvents(events);
